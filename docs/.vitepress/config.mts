@@ -5,19 +5,33 @@ export default defineConfig({
   description: "团队协作文档站点",
   lang: "zh-CN",
   base: "/",
+  appearance: false,
   lastUpdated: true,
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
-      { text: "开始使用", link: "/getting-started" },
-      { text: "贡献指南", link: "/contributing" }
+      { text: "协作入门", link: "/getting-started" },
+      {
+        text: "流程规范",
+        items: [
+          { text: "贡献指南", link: "/contributing" },
+          { text: "评审策略", link: "/process/review-policy" }
+        ]
+      },
+      { text: "安全治理", link: "/security/content-security" }
     ],
     sidebar: [
       {
-        text: "文档",
+        text: "门户导航",
         items: [
+          { text: "首页门户", link: "/" },
           { text: "开始使用", link: "/getting-started" },
-          { text: "贡献指南", link: "/contributing" },
+          { text: "贡献指南", link: "/contributing" }
+        ]
+      },
+      {
+        text: "流程与治理",
+        items: [
           { text: "评审策略", link: "/process/review-policy" },
           { text: "内容安全", link: "/security/content-security" }
         ]

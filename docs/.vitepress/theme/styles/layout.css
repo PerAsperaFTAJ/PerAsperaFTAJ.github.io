@@ -1,0 +1,139 @@
+.Layout {
+  background: transparent;
+}
+
+.VPNav {
+  border-bottom: 1px solid var(--pa-border);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.VPNavBar.has-sidebar .container,
+.VPNavBar .container {
+  max-width: 1360px;
+}
+
+.VPNavBarTitle .title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.VPNavBarMenu .VPNavBarMenuLink {
+  font-weight: 600;
+}
+
+.VPNavBarMenu .VPNavBarMenuLink.active {
+  color: var(--pa-text-main);
+}
+
+.VPNavBarSearch .DocSearch-Button {
+  border-radius: 999px;
+  border: 1px solid var(--pa-border);
+  background: #fff;
+}
+
+.VPContent.has-sidebar {
+  padding-top: 28px;
+}
+
+.VPDoc.has-sidebar .content-container,
+.VPDoc:not(.has-sidebar) .content-container {
+  max-width: 910px;
+}
+
+.VPDoc .container {
+  max-width: 1360px;
+}
+
+.VPSidebar {
+  border-right: 1px solid var(--pa-border);
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(8px);
+}
+
+.VPSidebar .group .text {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--pa-text-soft);
+}
+
+.VPSidebarItem .item .link {
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.VPSidebarItem .item .link.link.active {
+  background: rgba(255, 177, 0, 0.2);
+  color: var(--pa-text-main);
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--pa-teal);
+  border-left-color: var(--pa-teal);
+}
+
+.VPDocFooter .prev-next {
+  border-top: 1px solid var(--pa-border);
+  padding-top: 20px;
+}
+
+.vp-doc h1 {
+  margin-top: 8px;
+  margin-bottom: 18px;
+  font-size: 34px;
+  letter-spacing: 0.01em;
+}
+
+.vp-doc h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  border-top: 1px solid var(--pa-border);
+  padding-top: 22px;
+}
+
+.vp-doc p,
+.vp-doc li {
+  color: var(--pa-text-main);
+  line-height: 1.78;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--pa-shadow-soft);
+}
+
+.vp-doc th {
+  background: #eef3f8;
+}
+
+.vp-doc blockquote {
+  border-left: 4px solid var(--pa-accent);
+  background: #fff8e2;
+  border-radius: 0 10px 10px 0;
+}
+
+.vp-doc div[class*="language-"] {
+  border-radius: 14px;
+  box-shadow: var(--pa-shadow-soft);
+}
+
+@media (max-width: 1279px) {
+  .VPDoc .container {
+    max-width: 1180px;
+  }
+}
+
+@media (max-width: 959px) {
+  .VPContent.has-sidebar {
+    padding-top: 12px;
+  }
+
+  .vp-doc h1 {
+    font-size: 30px;
+  }
+}
