@@ -1,0 +1,19 @@
+{
+  "name": "per-aspera-wiki",
+  "private": true,
+  "version": "0.1.0",
+  "description": "基于 VitePress 和 GitHub Pages 的团队 Wiki",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4173",
+    "lint:md": "markdownlint-cli2"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1",
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

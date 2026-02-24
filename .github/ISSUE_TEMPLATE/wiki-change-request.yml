@@ -1,0 +1,60 @@
+name: 投稿权限申请
+description: 申请成为 Wiki 长期投稿协作者。
+title: "[投稿权限申请] "
+labels:
+  - contributor-application
+body:
+  - type: markdown
+    attributes:
+      value: |
+        该申请只需提交一次。
+        申请通过后，维护者会邀请你成为仓库协作者，后续可直接分支 + PR 投稿。
+
+  - type: dropdown
+    id: contributor_type
+    attributes:
+      label: 贡献者类型
+      options:
+        - 外部投稿者
+        - 团队外长期维护者
+    validations:
+      required: true
+
+  - type: textarea
+    id: topics
+    attributes:
+      label: 计划投稿主题
+      description: 简要说明你想长期维护的文章方向或栏目。
+      placeholder: 例如：安装教程、问题排查、流程说明
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cadence
+    attributes:
+      label: 预计投稿频率
+      options:
+        - 每周
+        - 每月
+        - 不固定
+    validations:
+      required: true
+
+  - type: textarea
+    id: profile
+    attributes:
+      label: 自我介绍（可选）
+      description: 说明你的背景、仓库关联项目或过往投稿经验。
+      placeholder: 可留空
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: 确认事项
+      options:
+        - label: 我理解即使成为协作者，也只能通过 PR 合并，不能直接推送 main。
+          required: true
+        - label: 我不会提交敏感、保密或违规内容。
+          required: true

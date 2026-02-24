@@ -1,0 +1,5 @@
+# 可按团队实际情况替换为维护者账号或组织 team slug。
+* @PerAsperaFTAJ
+docs/process/** @PerAsperaFTAJ
+docs/security/** @PerAsperaFTAJ
+.github/workflows/** @PerAsperaFTAJ
