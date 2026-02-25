@@ -20,3 +20,10 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Node / docs build artifacts
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Package manager lockfile not used in this repo workflow
+pnpm-lock.yaml

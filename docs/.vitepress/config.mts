@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Per Aspera 团队 Wiki",
+  title: "[循此苦旅]Mod Wiki",
   description: "团队协作文档站点",
   lang: "zh-CN",
   base: "/",
